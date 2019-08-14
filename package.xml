@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Socialicity_Integration</name>
+    <version>3.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/GPL-3.0">GPL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Socialicity integration extension for Magento.</summary>
+    <description>Socialicity Integration allows Magento users to automatically update their Socialicity Partner Portal with sales information so that no leads needs to be updated manually.</description>
+    <notes>Channel updates.</notes>
+    <authors><author><name>Pawel Burzynski</name><user>pawelburzynski</user><email>pawelburzynski@moneydebtandcredit.com</email></author></authors>
+    <date>2014-09-26</date>
+    <time>11:26:49</time>
+    <contents><target name="magelocal"><dir name="Socialicity"><dir name="Integration"><dir name="etc"><file name="config.xml" hash="2829d98bfb7da3667c428dac4dc884e1"/><file name="system.xml" hash="cf9a1280d2cd451fe52a9dacbdbf4674"/></dir><dir name="Core"><file name="SocialicityRepository.php" hash="16f06d1f22ba1bc11b6cfb6dfc5be119"/></dir><dir name="Model"><file name="CartObserver.php" hash="a5c73018b6f1c4587d28acac18a8e360"/><file name="SalesObserver.php" hash="01609ab7ce423c19433c5da93ac1a979"/></dir><dir name="controllers"><file name="IndexController.php" hash="d0e5d03c5e717b5683c5bd4c164c6465"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Socialicity_Integration.xml" hash="b3f123f7aa8c300f5d9c0d08e6fcacdb"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php><extension><name>Core</name><min>5.1.0</min><max>6.0.0</max></extension></required></dependencies>
+</package>

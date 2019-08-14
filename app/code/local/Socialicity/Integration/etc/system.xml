@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+   
+    <tabs>
+        <socialicity translate="label">
+            <label>Socialicity</label>
+            <sort_order>100</sort_order>
+        </socialicity>
+    </tabs>
+
+    <sections>
+        <socialicity translate="label" >
+            <label>General</label>
+            <tab>socialicity</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>    
+             <groups>                
+                <socialicity_general translate="label">
+                    <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <username translate="label">
+                            <label>Username: </label>
+                            <comment>Socialicity partner username (email)</comment>                           
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </username>
+                        <password translate="label">
+                            <label>Password: </label>                           
+                            <frontend_type>password</frontend_type>
+                             <comment>Socialicity partner password</comment> 
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </password>                      
+                    </fields>
+                </socialicity_general>
+                <socialicity_advanced translate="label">
+                    <label>Advanced</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>                
+                        <server_url translate="label">
+                            <label>REST Url: </label>
+                            <comment>Socialicity server notification url</comment>                           
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </server_url>
+                    </fields>
+                </socialicity_advanced>
+            </groups>       
+        </socialicity>
+    </sections>
+</config>

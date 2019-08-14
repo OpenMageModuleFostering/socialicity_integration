@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Socialicity_Integration>
+			<version>1.0.0</version>
+		</Socialicity_Integration>
+	</modules>
+	<global>
+		<events>
+			<sales_order_place_after>
+				<observers>
+					<socialicity_sales_order_observer>						
+						<class>Socialicity_Integration_Model_SalesObserver</class>
+						<method>salesOrderPlaceAfter</method>
+					</socialicity_sales_order_observer>
+				</observers>
+			</sales_order_place_after>
+			<checkout_cart_product_add_after>
+				<observers>
+					<socialicity_cart_add_observer>					
+						<class>Socialicity_Integration_Model_CartObserver</class>
+						<method>checkoutCartProductAddAfter</method>
+					</socialicity_cart_add_observer>
+				</observers>
+			</checkout_cart_product_add_after>
+		</events>
+	</global>
+	
+	<frontend>
+		<routers>
+			<integration>
+				<use>standard</use>
+				<args>
+					<module>Socialicity_Integration</module>
+					<frontName>socialicity</frontName>
+				</args>
+			</integration>
+		</routers>		
+	</frontend>
+
+	<default>
+		<socialicity>
+			<socialicity_advanced>
+				<server_url>https://api.socialicity.co.uk/api/Referral/Confirm</server_url>
+			</socialicity_advanced>
+		</socialicity>
+	</default>
+
+	<adminhtml>
+	    <acl>
+	        <resources>
+	            <all>
+	                <title>Allow Everything</title>
+	            </all>
+	            <admin>
+	                <children>
+	                    <system>
+	                        <children>
+	                            <config>
+	                                <children>
+	                                    <socialicity>
+	                                        <title>Socialicity - All</title>
+	                                    </socialicity>
+	                                </children>
+	                            </config>
+	                        </children>
+	                    </system>
+	                </children>
+	            </admin>
+	        </resources>
+	    </acl>
+	</adminhtml>	
+</config>
