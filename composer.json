@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Socialicity_Integration",
+    "name": "OpenMageModuleFostering\/Socialicity_Integration",
     "type": "magento-module",
     "license": "GPL-v3.0",
     "homepage": "",
     "description": "Socialicity integration extension for Magento.",
     "authors": [
-    {
-        "name": "Pawel Burzynski",
-        "email": "pawelburzynski@moneydebtandcredit.com"
-    }
-],
+        {
+            "name": "Pawel Burzynski",
+            "email": "pawelburzynski@moneydebtandcredit.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
